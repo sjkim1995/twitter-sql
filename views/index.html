@@ -32,6 +32,10 @@
           <div class="content">
             <p class="by"><a href="/users/{{ tweet.name }}">{{tweet.name}}</a></p>
             <p><a href="/tweets/{{ tweet.id }}">{{tweet.content}}</a></p>
+            <p><a href="/tweets/delete/{{ tweet.id }}">Delete</a></p>
+<!--             <form action="/tweets/delete/{{ tweet.id }}" method="POST">
+              <button type="submit" value="Submit">Delete</button>
+            </form> -->
           </div>
         </div>
       {% endfor %}
